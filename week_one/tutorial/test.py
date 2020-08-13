@@ -1,17 +1,18 @@
-def buyLotsOfFruit(orderList):
-    """
-        orderList: List of (fruit, numPounds) tuples
-
-    Returns cost of order
-    """
-    totalCost = 0.0
-    "*** YOUR CODE HERE ***"
-    for i in range(len(orderList)):
-        totalCost = orderList[i][1]+totalCost
-    return totalCost
+def fun(variable): 
+	letters = ['a', 'e', 'i', 'o', 'u'] 
+	if (variable in letters): 
+		return True
+	else: 
+		return False
 
 
-orderList = [('apples', 2.0), ('pears', 3.0), ('limes', 4.0)] 
+# sequence 
+sequence = ['g', 'e', 'e', 'j', 'k', 's', 'p', 'r'] 
 
-cost = buyLotsOfFruit(orderList)
-print(cost)
+# using filter function 
+filtered = filter(fun, sequence) 
+
+print('The filtered letters are:') 
+for s in filtered: 
+	print(s) 
+
