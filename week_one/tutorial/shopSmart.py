@@ -33,6 +33,7 @@ def shopSmart(orderList, fruitShops):
     return None
 
 
+
 if __name__ == '__main__':
     "This code runs when you invoke the script from the command line"
     orders = [('apples', 1.0), ('oranges', 3.0)]
